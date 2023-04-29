@@ -1,0 +1,143 @@
+<div class="frame" aria-hidden="true"></div>
+<a href="https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree">accessibility-tree</a>
+
+<input id="promo" type="checkbox">
+<label for="promo">Receive promotional offers?</label>
+
+or
+
+<label>
+	<input type="checkbox">Receive promotional offers?
+</label>
+
+<a href="https://webaim.org/techniques/css/invisiblecontent/">invisiblecontent</a>
+
+<style>
+	.sr-only {
+		position:absolute;
+		left:-10000px;
+		top:auto;
+		width:1px;
+		height:1px;
+		overflow:hidden;
+	}
+	/*or*/
+	.sr-only2 {clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;}
+
+		#skip a
+		{
+			position:absolute;
+			left:-10000px;
+			top:auto;
+			width:1px;
+			height:1px;
+			overflow:hidden;
+		}
+
+		#skip a:focus
+		{
+			position:static;
+			width:auto;
+			height:auto;
+		}
+
+		/*or*/
+
+		#skiptocontent a {
+			padding:6px;
+			position: absolute;
+			top:-40px;
+			left:0px;
+			color:white;
+			border-right:1px solid white;
+			border-bottom:1px solid white;
+			border-bottom-right-radius:8px;
+			background:#BF1722;
+			-webkit-transition: top 1s ease-out;
+			transition: top 1s ease-out;
+			z-index: 100;
+		}
+
+		#skiptocontent a:focus {
+			position:absolute;
+			left:0px;
+			top:0px;
+			outline-color:transparent;	
+			-webkit-transition: top .1s ease-in;
+			transition: top .1s ease-in;
+		}
+	</style>
+	<!-- then at top of tab index -->
+	<div id="skip"><a href="#content">Skip to Main Content</a></div>
+
+	<!-- or define a variable for bgcolor & use the same for hidden text ? in my absolute positioned divs -->
+
+
+	<header>
+		<div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+
+		<h2><a href="/"><img src="/media/logo.png" width="302" height="80" alt="WebAIM - Web Accessibility In Mind"></a></h2>
+
+		<nav>
+			<h2 class="hidden">Main Navigation</h2>
+			<ul>
+				<li><a href="/services/">Services</a></li>
+				<li class="current"><a href="/articles/">Articles</a></li>
+				<li><a href="/resources/">Resources</a></li>
+				<li><a href="/projects/">Projects</a></li>
+				<li><a href="/community/">Community</a></li>
+			</ul>
+		</nav>
+		<div id="search">
+			<form method="get" role="search" action="/search/" id="sitesearch">
+				<p class="search"><span><label for="q">Search:</label> <input type="text" name="q" id="q"><input type="image" src="/media/template/search.svg" alt="Submit Search"></span></p>
+			</form>
+
+			<p class="intro"><a href="/intro">Introduction to Web Accessibility</a></p>
+
+			<p class="training"><a href="/training">WebAIM Training</a></p>
+		</div>
+
+	</header>
+
+
+	<!-- btw ::: note the simplicity of -->
+	<style>
+		/* Global styles.*/
+
+		* {
+			margin:0;
+			padding:0;
+		}
+
+		html, body, form, fieldset, table, textarea {
+			font: 100% 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		}
+
+		a img {
+			border:none;
+		}
+
+		/* HTML5 elements. Silly IE! */
+		main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+			display:block;
+		}
+		body {
+			width:100%;
+			margin:0 auto;
+			background:#fafafa url(/media/template/mainbg.png) repeat-y center;
+			color:#333;
+		}
+	</style>
+	<p class="training"><a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn/related?hl=en">get chrome screen reader</a></p>
+
+
+
+

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>mctavish ::: portfolio</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="mctavish ::: home / portfolio / table of contents" />
+	<meta name="author" content="kathy mctavish">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+			"name": "portfolio",
+			"breadcrumb": "mctavish.work > portfolio",
+          		"url": "https://www.mctavish.work/index.html",
+			"description": "mctavish portfolio : list of works",
+			"datePublished": "2021-02-03",
+          		"image": "https://www.mctavish.work/apple-touch-icon.png",
+			"author": "https://mctavish.work/bio.html",
+			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0989MECNZV"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-0989MECNZV');
+	</script>
+	<link rel="stylesheet" href="css/fieldnotes.css"/>
+</head>
+<body id="top" >
+<div id="subtextframe" class="frame zlowest"></div>
+<div id="svgframe" class="frame zlow"><svg xmlns="http://www.w3.org/2000/svg" id="svg" class="frame"></svg></div>
+<div id="wordframe" class="frame z0"></div>
+<div id="contentframe">
+<div id="mainflex">
+<main id="main" class="expand" data-state="expanded" style="background-color:rgba(25, 25, 24, 0.6)">	
+<header>
+	<h1>mctavish</h1>
+	<h2>portfolio</h2>
+</header>
+<!-- <ul data-role="narrator" class="info compress">
+<li class="title typewriter" title="telegraph" id="telegraph"></li>
+<li class="title  typewriter" title="clock" id="clock">here | now</li>
+</ul> -->
+<ul>
+	<li><a href="#" id="soundlink" class="corelink">turn on sound</a> <span class="typewriter small" title="telegraph" id="telegraph"></span></li>
+	<!-- <li><a href="#" id="sounddrawings" class="corelink">access sound drawings</a></li> -->
+</ul>
+<hr/>
+<ul>
+	<li><a href="bio.html" id="biolink" class="corelink">bio</a></li>
+</ul>
+<hr/>
+<article>
+	<header>
+		<h1>archive</h1>
+		<h2>selected projects</h2>
+	</header>
+	<ul>
+		<li><a href="https://cloudfactory.work">cloud factory</a></li>
+		<li><a href="cmpb/index.html">count map pulse breathe</a></li>
+		<li><a href="swarm/index.html">swarm</a></li>
+		<li><a href="chance/index.html">chance</a></li>
+		<li><a href="millcity/index.html">mill city requiem</a></li>
+		<li><a href="br1nk/index.html">br1nK</a></li>
+		<li><a href="shakespeare/index.html">dost thou love me ?</a></li>
+		<li><a href="zero/index.html">zero</a></li>
+		<li><a href="sophroniatwo/index.html">sophronia two</a></li>
+		<li><a href="holeinthesky/index.html">høle in the skY</a></li>
+		<li><a href="originofbirds/index.html">origin of birds</a></li>
+		<li><a href="holyfool/index.html">holy fool</a></li>
+		<li><a href="roadtowilliston/index.html">road to williston</a></li>
+		<li><a href="radiopluto/index.html">radiø plutø</a></li>
+		<li><a href="birdland/index.html">birdland (v1)</a></li>
+	</ul>
+</article>
+<hr/>
+<article>
+	<header>
+		<h1>sound drawings</h1>
+		<h2>access to audio files</h2>
+	</header>
+	<ul>
+		<li><a href="sound/index.html" class="corelink">listen</a></li>
+	</ul>
+</article>
+<hr/>
+<article >
+	<header>
+		<h1><a href="#top">^</a> contact</h1>
+	</header>
+	<p>
+	email ::: kathy @ mctavish.work
+	</p>
+	<p><a rel="me" href="https://genart.social/@mctavish">mastodon</a></p>
+</article>
+<audio loop=true id="audio1" src="https://storage.googleapis.com/www.blueboatfilms.com/sound/IVdfd.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+</main>
+</div>
+</div>
+</body>
+<script src="code/velocity.min.js"></script>
+<script src="code/kefir201911.min.js"></script>
+<!-- <script src="code/atlasabsence.js"></script> -->
+<script>
+let width = window.innerWidth, height = window.innerHeight;
+let min = Math.min(width, height), max = Math.max(width, height);
+let version = (min < 680 || max < 980) ? "small" : "large";
+let v = version === "small" ? 0 : 1;
+let z = {};
+z.tools = {
+	randominteger: (min, max) => {
+		return Math.floor( min + Math.random()*(max-min));
+	},
+	logmsg: function(msg) {
+		try { 
+			console.log("### ::: " + msg); 
+		}
+		catch(err) { z.tools.logerror(err) }
+	},
+	logerror: function(error) {
+		try { console.log("rusty error ... " + error); }
+		catch(err) {}
+	},
+	randomhighharmonic: () => {
+		let multipliers = [10.0, 12.5, 13.33, 15, 20];
+		return multipliers[ z.tools.randominteger( 0, multipliers.length) ];
+	},
+	randomharmonic: () => {
+		let multipliers = [5, 7.5, 10.0, 12.5, 13.33, 15, 20];
+		return multipliers[ z.tools.randominteger( 0, multipliers.length) ];
+	},
+	randomlowharmonic: () => {
+		let multipliers = [5, 7.5, 10.0, 12.5, 13.33, 15, 20];
+		return multipliers[ z.tools.randominteger( 0, multipliers.length) ]/2;
+	},
+	randomkey: (object) => {
+		let keys = Object.keys(object);
+		let key = keys[z.tools.randominteger(0,keys.length)];
+		// z.tools.logmsg("key = " + key);
+		return key;
+	},
+	datestr: (date, options) => {
+		if(options===undefined) options = {year: "numeric", month: "2-digit", day: "numeric", hour12: true, hour: "2-digit", minute: "2-digit", second: "2-digit"};
+		return date.toLocaleTimeString("en-US", options);
+		//new Date().toLocaleTimeString("en-US", {year: "numeric", month: "2-digit", day: "numeric", hour12: true, hour: "2-digit", minute: "2-digit", second: "2-digit"});
+	},
+	togrid: (min=1, max=1, x=1, ndivisions=1) => {
+		let dx = Math.floor( (max-min) / ndivisions );
+		return Math.floor( ( x-min+dx/2)/dx )*dx + min;
+	},
+};
+//core elements
+z.elements = ( () => {
+	return {
+		body: { el: document.querySelector("body") },
+		main: { el: document.querySelector("main") },
+		// clock: { el: document.querySelector("#clock") },
+		// telegraph: { el: document.querySelector("#telegraph") },
+		svg:  { el: document.querySelector("#svg") },
+		frames: ["subtextframe", "svgframe", "wordframe", "contentframe"].reduce( (acc, id) => {
+			z.tools.logmsg("create frame element ::: " + id);
+			acc[id] = { el: document.querySelector("#"+id) };
+			return acc;
+		}, {})
+	}
+})()
+	
+z.streams = {
+	clock: ( () => {
+	let dt = 1;
+	let date0 = new Date();
+	let t0 = Math.floor(date0.getTime()/1000);
+	let state0 = { dt: dt, count: 0, date: date0, t: t0, t0: t0 };
+	return Kefir.withInterval( dt*1000, emitter => { emitter.emit( { date: new Date() } ) })
+			.scan( (state, e) => { 
+				state.date = e.date;
+				state.t = Math.floor(e.date.getTime()/1000);
+				state.count = state.count + 1;
+				return state;
+			}, state0  )
+	})( ),
+	dimensions: ( () => {
+		let dt = .4;
+		const ngrids=[2,2], npasts=[0,0];
+		let state0 = { dt: dt, count: 0,
+			grid: { nrows: ngrids[v], ncols: ngrids[v], dx: Math.floor(width/ngrids[v]), dy: Math.floor(height/ngrids[v]), sw: 12, pastn: npasts[v] },
+			width: width, height: height, 
+			max: max, min: min, 
+		};
+		return Kefir.fromEvents(window, "resize").throttle(dt*1000)
+			.scan( (state,e) => {
+				state.width = window.innerWidth;
+				state.height = window.innerHeight;
+				state.max = Math.max(state.width, state.height);
+				state.min = Math.min(state.width, state.height);
+				state.grid.dx = Math.floor(state.width/state.grid.ncols);
+				state.grid.dy = Math.floor(state.height/state.grid.nrows);
+				state.grid.sw = Math.floor(Math.max(state.grid.dx*.03, state.grid.dy*.03, 4));
+				return state
+			}, state0) 
+	})( ),
+};
+	//controls
+	( () => { 
+		const soundlink = document.querySelector("#soundlink");
+		const telegraph = document.querySelector("#telegraph");
+		const audio1 = document.querySelector("#audio1");
+		const baseurl = "https://storage.googleapis.com/www.blueboatfilms.com/sound/";
+		const tracks = [
+			{title: "love meditations", url: "lovemeditationspodcast.mp3", duration: 3980 }, //1:06:24
+			{title: "river icarus", url: "rivericaruspodcast.mp3", duration: 2110}, //35:13
+			// {title: "monks from outer space", url: "monks.mp3", duration: 380}, //6:22
+			{title: "ocean | wind | grief", url: "oceanwindgriefpodcast.mp3", duration: 1870},//31:18
+			{title: "night train / blue window", url: "nighttrainbluewindow/nighttrainbluewindowpodcast.mp3", duration: 2280}, //38:06
+			{title: "origin of birds", url: "originofbirdssound20140330.mp3", duration: 1360},//22:50
+			{title: "ahab's dream", url: "ahabsdreampodcast.mp3", duration: 1220},//20:24
+			{title: "birdland", url: "birdlandpodcast.mp3", duration: 3780},//1:03:05
+			{title: "holy fool", url: "holyfoolpodcast.mp3", duration: 1720},//28:43
+			{title: "horse speaks to sky", url: "horsespeakssky.mp3", duration: 420},//7:08
+			// {title: "road to williston sound thread #1", url: "traffick20141208_all_v6.mp3", duration:1170}, //19:35
+			{title: "rain clouds", url: "dronespace7.mp3", duration:360}, //6:03
+			// {title: "the sound of everyday objects", url: "thesoundofeverydayobjectspodcast.mp3", duration: 2380},//39:42
+			// {title: "cello / cister (5)", url: "cistern20140630_5_cistern.mp3", duration: 1780},//29:51
+
+			// sophroniasoundscape
+			// {title: "graffiti tunnel", url: "graffititunnelpodcast.mp3", duration: 1720},//45:12
+			// {title: "graffiti 2 hands", url: "graffiti2handspodcast.mp3", duration: 3780},//1:03:13
+			// {title: "between2deserts / two - the swan", url: "theswanpodcast.mp3", duration: 2960},//49:33
+
+		];
+		let soundplaying = false;
+		Kefir.fromEvents(soundlink, "click").onValue( e => {
+			z.tools.logmsg("play sound !");
+			if(!soundplaying) { 
+				try {
+					let track = tracks[z.tools.randominteger(0,tracks.length)];
+					audio1.src = baseurl + track.url;
+					let starttime = z.tools.randominteger(0,track.duration);
+					audio1.currentTime = starttime;
+					z.tools.logmsg("start at " + starttime)
+					audio1.play();
+					z.tools.logmsg("playback resumed");
+					telegraph.innerHTML =  "<i>(currently playing ::: " + track.title + ")</i>";
+					soundplaying = true;
+					soundlink.innerText = "turn off sound";
+					soundlink.classList.add("active");
+				} catch(e) { z.tools.logerror("dashboard ::: resumeaudio " + e) } 
+			}
+			else { 
+				try {
+					document.querySelector("#audio1").pause();
+					telegraph.innerHTML =  " . . . >";
+					soundplaying = false;
+					soundlink.innerText = "turn on sound";
+					soundlink.classList.remove("active");
+				} catch(e) { z.tools.logerror("dashboard ::: suspendaudio " + e) }
+			}
+		});
+	})();
+
+z.draw = z => {
+	let ntimings = 32;
+	let dtiming = Math.floor(400/ntimings);
+	const timings = [...Array(ntimings).keys()].reduce( (acc, j) => {
+		let duration = 500+(j*dtiming);
+		acc[j] = [duration, 900-duration];
+	return acc;
+	}, []);
+
+	// z.streams["clock"].onValue( e => {
+	// 	z.elements["clock"].el.innerHTML = z.tools.datestr(new Date(e.t*1000));
+	// });
+	const playlist = [
+		["#fcfbe3", "#191918"], //"warmbw",
+		//cello
+		["#1A0A03", "#2D0E08", "#6B2E12", "#613716", "#9E6528", "#5F370C", "#9A1905", "#FFF9C9"], //cello at sacred heart
+		["#0E0600", "#2E0F04", "#0F0700", "#484E42", "#577871", "#010101", "#FFFFFF", "#406861", "#902200"], //cello at sacred heart
+		["#78685B", "#B4A19A", "#877C6A", "#2F3C35", "#435046", "#242216", "#6B867D", "#993B21", "#000100", "#725128", "#15211D"], //cello at sacred heart
+		["#6B6259", "#43403B", "#51524D", "#8A300F", "#743B1D", "#988071", "#2D2F2E", "#B9AA8D", "#64655E"], //cello stairwell*
+		["#3D1C04", "#0D0604", "#411B0D", "#6D3F26", "#8E7061", "#8E9490"], //cellosacredheart
+		// birdland
+		["#163341", "#172F47", "#4477A8", "#2A4A69", "#52779B", "#000000", "#384B60", "#1F3350", "#153A69", "#153559", "#9D9990", "#9D9990", "#181E21", "#0C1D32", "#706959", "#D6D3CE", "#534E48", "#3E5766", "#222E34", "#BBB4A4", "#7C7D7F"], //birdland
+
+	];
+	
+	z.streams["color"] = ( dt => {
+		let date0 = new Date();
+		let t0 = Math.floor(date0.getTime()/1000);
+		let state0 = { 
+			dt: dt, count: 0,
+			choices: playlist[ Math.floor(t0/dt)%playlist.length ]
+		};
+		return z.streams["clock"].filter( e => e.t%dt===0 )
+			.scan( (state, e) => { 
+				state.choices = playlist[ Math.floor(e.t/dt)%playlist.length ];
+				// state.choices = playlist[ Math.floor(state.count)%playlist.length ];
+				state.count = state.count + 1;
+				return state;
+			}, state0  )
+	})( 38 );
+	
+	z.streams["draw"] = Kefir.combine([z.streams["clock"]], [z.streams["dimensions"], z.streams["color"]], (clock, dimensions, color) => { return {clock:clock, dimensions:dimensions, color:color} })
+		.scan( (state, e) => { 
+			state.clock = e.clock;
+			state.dimensions = e.dimensions;
+			state.color = e.color;
+			state.count = state.count + 1;
+			z.tools.logmsg("color.choices = " + e.color.choices);
+			return state;
+	}, {clock:{t:0}, dt:1}  );
+
+//box
+( dt => {
+	const element = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+	element.setAttributeNS(null, "id", "box");
+	element.setAttributeNS(null, "class", "shape square");
+	z.elements["svg"].el.appendChild(element);
+		
+	z.streams["draw"].filter(e => e.clock.t%dt===0).onValue( e => {
+		try {
+			let color = e.color.choices[z.tools.randominteger(0, e.color.choices.length)];
+			Velocity({	
+				elements: element, 
+				properties: { fillOpacity: 1.0, strokeOpacity: 0.0, fill: color, width: e.dimensions.width, height: e.dimensions.height },
+				options: { duration: 2000,  delay: 0, easing: "easeInOutQuad" },
+			});
+		} catch(err) { z.tools.logerror("box animation ::: " + err ) }
+	})
+})(8);
+
+
+//words
+( dt => {
+	const nwords = [[0,1],[0,1]][v];
+	const words = [
+	"_.._._+ . < +=_.._._+ . < +=_.._._+ . < +=: :  . < > '",". . . . . .& | { . . ::: x",
+	"ø 0 ¥ ø Y H L ® Å Ö x x x ø 0 Ø x X x ø 0 Ø xº3",
+	".. - / .-- .- ... / .-.. .. -.- . / - .... .. ... / . ...- . .-. -.-- / -- --- .-. -. .. -. --.",
+	];
+	//do this for all words ...fit to screen size
+	words.push([...Array([18,38][v]).keys()].reduce( (acc, key, j) => {
+		acc[j] = ". . .. . :";
+		return acc;
+	}, []));
+	const elements = nwords.reduce( (acc, id, j) => {
+		z.tools.logmsg("create word element ::: " + id);
+		let el = document.createElement("div");
+		el.setAttribute("id", "word_" + id);
+		el.setAttribute("class", "absolute monospace_zerodot");
+		el.innerHTML = words[j%words.length];
+		z.elements["frames"]["wordframe"].el.appendChild(el);
+		el.style[ "opacity" ] = 0.0;
+		el.style[ "whiteSpace" ] = "nowrap";
+		acc[id] = { el: el };
+		return acc;
+	}, []);
+	let n = elements.length;
+	const drawings = [
+		e => {
+			try {
+				let count = e.clock.t/dt;
+				let element = elements[count%n];
+				let color = e.color.choices[z.tools.randominteger(0, e.color.choices.length)];
+				// elements.forEach( (element, j) => {
+				element.el.innerText = words[count%words.length];
+				element.el.style[ "fontSize" ] = e.dimensions.height+"px";
+				let textwidth = element.el.clientWidth;
+				let direction=(count)%2===0 ? -1.0 : 1.0;
+				let startleft = (count)%2===0 ? e.dimensions.width : -1.0*textwidth;
+				let endleft = (count)%2===0 ? -1.0*textwidth : e.dimensions.width;
+				z.tools.logmsg("count = " + count + " endleft = " + endleft + " startleft = " + startleft);
+				element.el.style[ "left" ] = startleft+"px";
+				element.el.style[ "top" ] = -1.0*z.tools.randominteger(100,e.dimensions.height/2)+"px";
+				element.el.style[ "opacity" ] = 0.4;
+
+				Velocity({	
+					elements: element.el,
+					properties: { opacity:0.8, left: endleft, color: color },
+					options: { duration: n*dt*600,  delay: 0, easing: "linear" },
+				});
+				Velocity({	
+					elements: element.el,
+					properties: { opacity:0.0 },
+					options: { duration: n*dt*200,  delay: 0 },
+				});
+				// })
+			} catch(err) { z.tools.logerror("word 1 animation ::: " + err ) }
+		},
+	]
+	z.tools.logmsg("#word elements = " + elements.length);
+	z.streams["draw"].filter(e => e.clock.t%dt===0).onValue( e => {
+		drawings[Math.floor(e.clock.t/(dt*elements.length))%drawings.length](e);
+	})
+})(9);
+
+
+const p = [
+	e => {
+		let cy = z.tools.randominteger(0,e.dimensions.height);
+		return {
+			xend: [-2.0*e.dimensions.width, z.tools.randominteger(-1.0*e.dimensions.width/4, -1.0*e.dimensions.width/2)],
+			xstart: [z.tools.randominteger(e.dimensions.width*1.2, e.dimensions.width*1.4), 2*e.dimensions.width],
+			ystart: [cy,cy], yend: [cy,cy]
+		}
+	},
+	e => {
+		let cx = z.tools.randominteger(0,e.dimensions.width);
+		return {
+			yend: [-2.0*e.dimensions.height, z.tools.randominteger(-1.0*e.dimensions.height/4, -1.0*e.dimensions.height/2)],
+			ystart: [z.tools.randominteger(e.dimensions.height*1.2, e.dimensions.height*1.4), 2*e.dimensions.height],
+			xstart: [cx,cx], xend: [cx,cx]
+		}
+	},
+	e => {
+		let cy = z.tools.randominteger(0,e.dimensions.height);
+		return {
+			xstart: [-2.0*e.dimensions.width, z.tools.randominteger(-1.0*e.dimensions.width/4, -1.0*e.dimensions.width/2)],
+			xend: [z.tools.randominteger(e.dimensions.width*1.2, e.dimensions.width*1.4), 2*e.dimensions.width],
+			ystart: [cy,cy], yend: [cy,cy]
+		}
+	},
+	e => {
+		let cx = z.tools.randominteger(0,e.dimensions.width);
+		return {
+			ystart: [-2.0*e.dimensions.height, z.tools.randominteger(-1.0*e.dimensions.height/4, -1.0*e.dimensions.height/2)],
+			yend: [z.tools.randominteger(e.dimensions.height*1.2, e.dimensions.height*1.4), 2*e.dimensions.height],
+			xstart: [cx,cx], xend: [cx,cx]
+		}
+	}
+];
+	//line 1
+	( dt => {
+	const nelements=[[...Array(4).keys()],[...Array(8).keys()]][v];
+	const elements = nelements.reduce( (acc, id) => {
+		z.tools.logmsg("create line element ::: " + id);
+		let el = document.createElementNS("http://www.w3.org/2000/svg", "line");
+		el.setAttributeNS(null, "id", "line1_"+ id);
+		el.setAttributeNS(null, "class", "shape line");
+		z.elements["svg"].el.appendChild(el);
+		acc[id] = { el: el };
+	return acc;
+	}, []);
+	const n = elements.length;
+	const drawings = [
+		e => {
+			try {
+				let count = e.clock.t/dt;
+				let params = p[z.tools.randominteger(0,p.length)](e);
+				let timing = timings[z.tools.randominteger(0,timings.length)];
+				let duration = dt*timing[0]*n, delay = z.tools.randominteger(0, dt*timing[1]*n);
+				let element = elements[count%elements.length];
+				let color = e.color.choices[z.tools.randominteger(0, e.color.choices.length)];
+				element.el.setAttribute("stroke", color);
+				element.el.setAttribute("x1", params.xstart[0]); element.el.setAttribute("x2", params.xstart[1]);
+				element.el.setAttribute("y1", params.ystart[0]); element.el.setAttribute("y2", params.ystart[1]);
+				element.el.setAttribute("strokeOpacity", z.tools.randominteger(0.1,8)/10);
+				Velocity({	
+					elements: element.el,
+					properties: { strokeOpacity: 1.0, stroke: color, strokeWidth: z.tools.randominteger(e.dimensions.min,e.dimensions.max), strokeDasharray: z.tools.randominteger(e.dimensions.min/4, e.dimensions.min), x1: params.xend[0], x2: params.xend[1], y1: params.yend[0], y2: params.yend[1] },
+					options: { duration: duration,  delay: delay },
+				});
+			} catch(err) { z.tools.logerror("line animation 1 ::: " + err ) }
+		},
+	];
+	z.streams["draw"].filter(e => e.clock.t%dt===0).onValue( e => {
+		drawings[Math.floor(e.clock.t/(dt*elements.length*2))%drawings.length](e);
+	})
+})(4);
+
+};
+
+window.addEventListener('load', e => {
+  z.draw(z);
+  window.scroll(0,0);
+  // window.setTimeout(() => { document.querySelector("#contentframe").style.opacity = 1.0 }, 3800);
+  // window.setTimeout(() => { document.querySelector("#controls").style.backgroundColor = "rgba(0,0,0,0.0)" }, 6800);
+});
+// window.addEventListener('beforeunload', e => {
+// 	window.scroll(0,0);
+// });
+</script>
+</html>
