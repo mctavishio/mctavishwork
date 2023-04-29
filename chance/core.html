@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+	<title>chance core animation</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="description" content="kathy mctavish: media composer ::: drawings ::: chance core animation" />
+	<meta name="author" content="kathy mctavish">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+			"name": "chance simplified core",
+			"breadcrumb": "mctavish.work > chance > core",
+          		"url": "https://mctavish.work/chance/core.html",
+			"description": "2018 drawings ::: chance :: simplified core",
+			"datePublished": "2019-06-03",
+          		"image": "http://www.mctavish.work/apple-touch-icon.png",
+			"author": "http://mctavish.work/bio.html",
+			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0989MECNZV"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-0989MECNZV');
+	</script>
+	
+	<!--see: https://github.com/julianshapiro/velocity/wiki-->
+	<script src="../code/velocity.min.js"></script>
+	<script src="../code/kefir201911.min.js"></script>
+	<link rel="stylesheet" href="draw.css"/>
+</head>
+<body id="body">
+	<nav id="controls">
+		<ul class="flex">
+			<!--<li><a href="#" title="hide controls" id="hide"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 408 408" ><path d="M86.7,372.3l35.7,35.7l81.6-81.6l81.6,81.6l35.7-35.7L204,255L86.7,372.3z M321.3,35.7L285.6,0L204,81.6L122.4,0 L86.7,35.7L204,153L321.3,35.7z"/></svg></a></li>-->
+			<li title="hide controls" id="hide"><a href="#" ><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 470 470" ><g><path d="M231.147,160.373l67.2,67.2l0.32-3.52c0-35.307-28.693-64-64-64L231.147,160.373z"/><path d="M234.667,117.387c58.88,0,106.667,47.787,106.667,106.667c0,13.76-2.773,26.88-7.573,38.933l62.4,62.4 c32.213-26.88,57.6-61.653,73.28-101.333c-37.013-93.653-128-160-234.773-160c-29.867,0-58.453,5.333-85.013,14.933l46.08,45.973 C207.787,120.267,220.907,117.387,234.667,117.387z"/><path d="M21.333,59.253l48.64,48.64l9.707,9.707C44.48,145.12,16.64,181.707,0,224.053c36.907,93.653,128,160,234.667,160 c33.067,0,64.64-6.4,93.547-18.027l9.067,9.067l62.187,62.293l27.2-27.093L48.533,32.053L21.333,59.253z M139.307,177.12 l32.96,32.96c-0.96,4.587-1.6,9.173-1.6,13.973c0,35.307,28.693,64,64,64c4.8,0,9.387-0.64,13.867-1.6l32.96,32.96  c-14.187,7.04-29.973,11.307-46.827,11.307C175.787,330.72,128,282.933,128,224.053C128,207.2,132.267,191.413,139.307,177.12z" /></g></svg></a></li>
+			<li title="volume on" id="volume-on"><a href="#" ><svg class="icon" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 459 459" ><path d="M0,153v153h102l127.5,127.5v-408L102,153H0z M344.25,229.5c0-45.9-25.5-84.15-63.75-102v204 C318.75,313.65,344.25,275.4,344.25,229.5z M280.5,5.1v53.55C354.45,81.6,408,147.899,408,229.5S354.45,377.4,280.5,400.35V453.9 C382.5,430.949,459,339.15,459,229.5C459,119.85,382.5,28.049,280.5,5.1z"/></svg></a></li>
+			<li style="display:none" title="volume off" id="volume-off"><a href="#" ><svg class="icon" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 461.55 461.55" ><path d="M345.525,229.5c0-45.9-25.5-84.15-63.75-102v56.1l63.75,63.75C345.525,239.7,345.525,234.6,345.525,229.5z M409.275,229.5 c0,22.95-5.1,45.9-12.75,66.3l38.25,38.25c17.85-30.6,25.5-68.85,25.5-107.1c0-109.65-76.5-201.45-178.5-224.4V56.1 C355.725,81.6,409.275,147.9,409.275,229.5z M34.425,0L1.275,33.15L121.125,153H1.275v153h102l127.5,127.5V262.65L340.425,372.3 c-17.851,12.75-35.7,22.95-58.65,30.601v53.55c35.7-7.65,66.3-22.95,94.35-45.9l51,51l33.15-33.149l-229.5-229.5L34.425,0z M230.775,25.5l-53.55,53.55l53.55,53.55V25.5z"/></svg></a></li>
+			<li title="home" id="home"><a href="index.html" ><svg class="icon" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 510 510" ><polygon points="204,471.75 204,318.75 306,318.75 306,471.75 433.5,471.75 433.5,267.75 510,267.75 255,38.25 0,267.75 76.5,267.75 76.5,471.75"/></svg></a></li>
+		</ul>
+	</nav>
+
+	<nav title="menu" id="menu" style="display:none" >
+		<ul class="flex">
+			<li ><a href="#" ><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 459 459"><path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/></svg></a></div>
+		</ul>
+	</nav>	
+</body>
+<script src="draw.js"></script>
+</html>
