@@ -469,6 +469,7 @@ article {
 }
 
 header {
+	margin-bottom: 1.1em;
 	/*max-width: 100%; width: 100%;*/
 }
 body main > header {
@@ -486,7 +487,7 @@ h1 {
 	/*padding-left: 1em;
 	padding-right: 1em;*/
 	/*font-weight: bold;*/
-	font-size: 1.4em;
+	font-size: 1.8em;
 	line-height: 1.4em;
 	letter-spacing: .1em;
 	color: #fcfbe3;
