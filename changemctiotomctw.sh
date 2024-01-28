@@ -1,2 +1,2 @@
-grep -rl 'mctavish.io' ./ | LC_ALL=C xargs sed -i '' 's/mctavish.io/mctavish.work/g'
+grep -rl 'www.mctavish.work' ./ | LC_ALL=C xargs sed -i '' 's/www.mctavish.work/mctavish.work/g'
 

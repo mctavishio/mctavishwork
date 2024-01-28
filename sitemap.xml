@@ -1,238 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-<url>
-  <loc>https://www.mctavish.work/</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/bio.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/swarm/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/chance/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/millcity/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/br1nk/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/shakespeare/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/zero/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/sophroniatwo/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/holeinthesky/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/originofbirds/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/holyfool/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/roadtowilliston/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/radiopluto/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/birdland/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/sound/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/index.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/surface.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/starfall.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/nighttrainbluewindow.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/coda.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/fieldnotes.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/planets.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/rivericarus.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/green.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/blueatlas/migration.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishResume202011_2pages.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishResume202011_extensive.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishTeachingPhilosophy2020.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishWorkSample202003.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishScore1.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishScore2.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/data/text/McTavishScore3.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/installation.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/map3a.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/map3b.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/map3c.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/map54.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/map58.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/cmpb/map88.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/swarm/shapes1.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/swarm/quilts.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/swarm/references.pdf</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.mctavish.work/zero/film.html</loc>
-  <lastmod>2021-02-03T18:55:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+	<url>
+		<loc>https://mctavish.work/</loc>
+		<lastmod>2024-01-24T03:05:31+00:00</lastmod>
+		<priority>1.00</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/bio.html</loc>
+		<lastmod>2024-01-24T03:03:50+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/index.html</loc>
+		<lastmod>2024-01-22T15:38:49+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/chance/index.html</loc>
+		<lastmod>2024-01-22T15:37:56+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/millcity/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/br1nk/index.html</loc>
+		<lastmod>2024-01-22T15:37:11+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/shakespeare/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/zero/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/sophroniatwo/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/holeinthesky/index.html</loc>
+		<lastmod>2024-01-22T15:48:20+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/originofbirds/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/holyfool/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/roadtowilliston/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/radiopluto/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/birdland/index.html</loc>
+		<lastmod>2024-01-22T15:35:29+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/sound/index.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/index.html</loc>
+		<lastmod>2024-01-24T03:05:31+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishResume202306_2pages.pdf</loc>
+		<lastmod>2023-07-03T18:42:45+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishResume202306_extensive.pdf</loc>
+		<lastmod>2023-07-03T18:42:45+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishTeachingPhilosophy2020.pdf</loc>
+		<lastmod>2023-04-29T03:43:47+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishResumeTeaching202306_2pages.pdf</loc>
+		<lastmod>2023-07-03T18:42:45+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishWorkSample202003.pdf</loc>
+		<lastmod>2023-04-29T03:43:47+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishScore1.pdf</loc>
+		<lastmod>2023-04-29T03:43:47+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishScore2.pdf</loc>
+		<lastmod>2023-04-29T03:43:47+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/data/text/McTavishScore3.pdf</loc>
+		<lastmod>2023-04-29T03:43:47+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/installation.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/map3a.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/map3b.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/map3c.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/map54.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/map58.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/cmpb/map88.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/core.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/lines.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/circles.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/shapes1.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/quilts.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/swarm/references.pdf</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://mctavish.work/zero/film.html</loc>
+		<lastmod>2023-04-29T03:57:38+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
 </urlset>
