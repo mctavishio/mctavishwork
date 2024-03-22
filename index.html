@@ -52,12 +52,15 @@
 <li class="title  typewriter" title="clock" id="clock">here | now</li>
 </ul> -->
 <ul>
-	<li><a href="#" id="soundlink" class="corelink">turn on sound</a> <span class="typewriter small" title="telegraph" id="telegraph"></span></li>
+	<!--<li><a href="#" id="soundlink" class="corelink">turn on sound</a> <span class="typewriter small" title="telegraph" id="telegraph"></span></li>-->
 	<!-- <li><a href="#" id="sounddrawings" class="corelink">access sound drawings</a></li> -->
 </ul>
 <hr/>
 <ul>
 	<li><a href="bio.html" id="biolink" class="corelink">bio</a></li>
+	<li><a href="#experiments" id="explink" class="corelink">experiments</a></li>
+	<li><a href="#installations" id="instlink" class="corelink">installations</a></li>
+	<li><a href="#sound" id="instlink" class="corelink">sound</a></li>
 </ul>
 <hr/>
 <article>
@@ -65,7 +68,7 @@
 		<h1>archive</h1>
 		<h2>selected projects</h2>
 	</header>
-	<h5>cloud factory :::</h5>
+	<h5 id="experiments">cloud factory :::</h5>
 	<ul>
 		<li><a href="https://cyclone.work">cyclone</a></li>
 		<li><a href="https://noisefactory.work">noise factory</a></li>
@@ -77,7 +80,8 @@
 		<li><a href="https://blueatlas.work">blue atlas</a></li>
 		<li><a href="https://cloudfactory.work">cloud factory: the covid years</a></li>
 	</ul>
-	<h5>installations :::</h5>
+	<hr/>
+	<h5 id="installations">installations :::</h5>
 	<ul>
 		<li><a href="cmpb/index.html">count map pulse breathe</a></li>
 		<li><a href="swarm/index.html">swarm</a></li>
@@ -96,7 +100,7 @@
 	</ul>
 </article>
 <hr/>
-<article>
+<article id="sound">
 	<header>
 		<h1>sound drawings</h1>
 		<h2>access to audio files</h2>
@@ -253,6 +257,7 @@ z.streams = {
 
 		];
 		let soundplaying = false;
+		/*
 		Kefir.fromEvents(soundlink, "click").onValue( e => {
 			z.tools.logmsg("play sound !");
 			if(!soundplaying) { 
@@ -279,7 +284,7 @@ z.streams = {
 					soundlink.classList.remove("active");
 				} catch(e) { z.tools.logerror("dashboard ::: suspendaudio " + e) }
 			}
-		});
+		});*/
 	})();
 
 z.draw = z => {
