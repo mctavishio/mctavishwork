@@ -75,6 +75,7 @@
 		<li><a href="#libraryinfo">library info</a></li>
 		<li><a href="#videoall">installation video</a></li>
 		<li><a href="#notes">notes</a></li>
+		<li><a href="#radio">jukebox / radio</a></li>
 		<li><a href="#experiments">experiments</a></li>
 		<li><a href="#thanks">acknowledgments</a></li>
 		<!--<li><a href="#about">about</a></li>-->
@@ -120,6 +121,7 @@
 	<div class="content">
 		<p>under construction ::: more soon</p>
 		<ul>
+			<li><a href="tract2024.08mags.pdf">tract (pdf compiled by mags david)</a></li>
 			<li><a href="notesfirstday_final.pdf">first day (pdf)</a></li>
 			<li><a href="notescitation_v2_final.pdf">citation ::: notes (pdf)</a></li>
 			<li><a href="citations.pdf">citation list (pdf)</a></li>
@@ -154,45 +156,352 @@
 	</ul>
 	</div>
 </article>
-<!--
-<article id="about">
+<article id="radio">
 	<header>
-		<h1>notes</h1>
+		<h1>jukebox / radio :::</h1>
+	</header>
+	<p><i>play random sequence</i></p>
+	<p>
+	<a id="soundlink" href="#soundlink">play sound</a>
+	</p>
+	<p>
+	<a id="nextlink" href="#nextlink">jump to new track</a>
+	</p>
+	<p id="telegraph">...</p>
+	<p>
+	<audio  id="audio1" src="https://storage.googleapis.com/www.blueboatfilms.com/sound/IVdfd.mp3" control="true" type="audio/mpeg" style="display:block">
+		Your browser does not support the audio tag.
+	</audio>
+	</p>
+</article>
+<!--
+	<article id="about">
+	<header>
+	<h1>notes</h1>
 	</header>
 	<div class="content">
 	<p>This is part of a larger research project into the sequences ::: the continuums
 	<ul>
-		<li>tonal fragements => sound threads</li>
-		<li>frame sequence => film</li>
-		<li>list of text & image blocks => book</li>
-		<li>list of vectors => composite image</li>
-		<li>list of composite images => prints</li>
-		<li>list of media packages => index</li>
+	<li>tonal fragements => sound threads</li>
+	<li>frame sequence => film</li>
+	<li>list of text & image blocks => book</li>
+	<li>list of vectors => composite image</li>
+	<li>list of composite images => prints</li>
+	<li>list of media packages => index</li>
 	</ul>
 	</p>
 	<p>I am also interested in the act of tweening ::: that discrete
 	set of bridges from one moment to the next.</p>
 	</div>
-</article>
+	</article>
 -->
 <article id="thanks">
 	<header>
 		<h1>acknowledgments</h1>
 	</header>
 	<div class="content">
-	<p>This project was developed during an artist residency and evolving exhibit at the 
-	Kathryn A. Martin Library (UMN Duluth) 2024-2025. I am grateful for their support.
-	</p>
-	<!--
-	<p>
-		I am grateful for conversations with University of Minnesota Duluth Kathryn A. Martin Library staff, Sheila Packa, Valerie Stoehr, Alexis Elder. Special thanks to collaboration from librarian Mags David and to project coordination from librarian Ian Moore.
-	</p><p>
-		This evolving exhibit is part of a year-long artist residency at the University of Minnesota Duluth Kathryn A. Martin Library (2024-2025). I am thankful for their support.
-	</p>
-	-->
+		<p>This project was developed during an artist residency and evolving exhibit at the 
+		Kathryn A. Martin Library (UMN Duluth) 2024-2025. I am grateful for their support.
+		</p>
+		<!--
+			<p>
+			I am grateful for conversations with University of Minnesota Duluth Kathryn A. Martin Library staff, Sheila Packa, Valerie Stoehr, Alexis Elder. Special thanks to collaboration from librarian Mags David and to project coordination from librarian Ian Moore.
+			</p><p>
+			This evolving exhibit is part of a year-long artist residency at the University of Minnesota Duluth Kathryn A. Martin Library (2024-2025). I am thankful for their support.
+			</p>
+		-->
 	</div>
 </article>
 </main>
 </div>
 </body>
+<script>
+	soundfiles = [
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118133359", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118113500", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118114313", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117204810", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118111322", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118105738", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118123252", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118102253", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118105216", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118121459", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118120911", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117220019", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118134450", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117205615", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117210757", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118123845", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117212031", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118115130", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118101356", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117221253", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118103408", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118122111", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117220926", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240117215344", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118124536", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212141757", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231214193934", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212220349", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212180856", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213154548", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231104132640", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231111165509", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213214810", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211150541", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211200013", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213145456", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231104135400", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213211339", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231128121825", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231111171017", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211205843", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211191339", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212223421", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231103162200", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231111174919", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211201650", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231011125630", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231128144654", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213144622", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213151304", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231111172844", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231010173747", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212221339", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231104152003", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213153038", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		//{gsfolder:"topologywork", subdir: "topology", id: "20231010170241", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231111162532", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231214153336", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231214161200", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231104134707", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211133250", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213202332", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213134427", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231111164059", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213150950", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211184746", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231214173900", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231011110448", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211154922", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213145234", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212181513", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231103171101", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212114156", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211195224", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213202715", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231010165340", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212171816", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212172838", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231214174620", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213211814", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213205241", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231024153707", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212222158", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231011120503", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211145542", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213144229", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212215153", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213143208", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211160441", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231024154732", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231103164113", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213155104", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213212243", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231211210745", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231103152040", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231011112641", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212215538", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231010182550", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231010213339", mp3file: "line_all_thread_all_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231212152351", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231024151553", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231024105427", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"topologywork", subdir: "topology", id: "20231213195034", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240116223531", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240116213404", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117111029", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117142913", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117123924", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117130429", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117092903", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117121834", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117113302", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240116222158", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240116205304", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240116211536", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117124908", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117135535", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240117125701", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "clockfactory", id: "20240116215411", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231164855", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231229231142", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231234301", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230120027", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230125500", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231125254", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231165919", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230133102", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231229233513", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231171500", mp3file: "line_all_thread_all_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230131147", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230121525", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230134629", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231173624", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231232713", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231229232656", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231229224951", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231230135346", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"clockfactory", subdir: "netfactory", id: "20231231114907", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120200721", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120201524", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120222203", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120215240", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120220723", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120191912", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120223303", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120153748", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120152036", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120220009", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120190952", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120192853", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120193546", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"noisefactory", subdir: "cyclone", id: "20240120153229", mp3file: "line_all_thread_all_echo_reverb.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319161438", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240324143932", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319191759", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319155955", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240317183551", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319163046", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240320111334", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512094357", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513182627", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511155245", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513173525", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511154339", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511195653", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513170907", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512104604", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511160447", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511201432", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511205630", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511214321", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512124407", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511221630", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511150012", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513144008", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511202455", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511211847", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513172553", mp3file: "tf_04:00_sound.mp3"},
+		//{gsfolder:"bindery", subdir: "telegraph", id: "20240511200506", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511152622", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513141257", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511210212", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511204832", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512125830", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511155823", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512121459", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512115206", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511151304", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511144655", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511212547", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513183910", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512102250", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511204219", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319161438", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240324143932", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319191759", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319155955", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240317183551", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240319163046", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "transfigure", id: "20240320111334", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512094357", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513182627", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511155245", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513173525", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511154339", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511195653", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513170907", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512104604", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511160447", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511201432", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511205630", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511214321", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512124407", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511221630", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511150012", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513144008", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511202455", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511211847", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513172553", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511200506", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511152622", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513141257", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511210212", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511204832", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512125830", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511155823", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512121459", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512115206", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511151304", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511144655", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511212547", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240513183910", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240512102250", mp3file: "tf_04:00_sound.mp3"},
+		{gsfolder:"bindery", subdir: "telegraph", id: "20240511204219", mp3file: "tf_04:00_sound.mp3"},
+	];
+	let soundplaying = false;
+	let randominteger = (min, max) => {
+		return Math.floor( min + Math.random()*(max-min));
+	};
+	let changetrack = e => {
+		e.preventDefault();
+		console.log("soundplaying="+soundplaying);
+		console.log("e="+e);
+		if(!soundplaying) { 
+			try {
+				let {mp3file,gsfolder,subdir,id} = soundfiles[randominteger(0,soundfiles.length)];
+				console.log("id="+id);
+				console.log("gsfolder="+gsfolder);
+				let src = `https://storage.googleapis.com/${gsfolder}/mill${id}/${mp3file}`;
+				audio1.src = src;
+				audio1.play();
+				telegraph.innerHTML =  `
+<hr/><hr/>currently playing:::<br/>
+from:::<a href="${subdir}/index${id}.html">${subdir}/index${id}.html</a><br/>
+track :::<a href="${src}">${subdir} #${id}</a>
+<hr/><hr/>`;
+				soundplaying = true;
+				soundlink.innerText = "turn off sound";
+				soundlink.classList.add("active");
+			} catch(e) {console.log("oops..."+e)} 
+		}
+		else { 
+			try {
+				document.querySelector("#audio1").pause();
+				telegraph.innerHTML =  " . . . >";
+				soundplaying = false;
+				soundlink.innerText = "turn on sound";
+				soundlink.classList.remove("active");
+			} catch(e) { console.log("dashboard ::: suspendaudio " + e) }
+		}
+	}
+	//controls
+	( () => { 
+		const nextlink = document.querySelector("#nextlink");
+		const soundlink = document.querySelector("#soundlink");
+		const telegraph = document.querySelector("#telegraph");
+		const audio1 = document.querySelector("#audio1");
+		soundlink.addEventListener("click", changetrack );
+		nextlink.addEventListener("click", e=> { soundplaying = false; changetrack(e) } );
+		audio1.addEventListener("ended", e=> { soundplaying = false; changetrack(e) } );
+		let {mp3file,gsfolder,subdir,id} = soundfiles[randominteger(0,soundfiles.length)];
+		console.log("id="+id);
+		console.log("gsfolder="+gsfolder);
+		let src = `https://storage.googleapis.com/${gsfolder}/mill${id}/${mp3file}`;
+		audio1.src = src;
+	})();
+</script>
 </html>
