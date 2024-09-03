@@ -65,6 +65,7 @@
 <div id="mainflex">
 <main class="expand medium" id="top">
 <header>
+	<p><i>under construction ::: </i></p>
 	<h1>thought | machine</h1>
 	<h2>library artist residency 2024-2025</h2>
 </header>
@@ -105,6 +106,7 @@
 	<header>
 		<h1>installation video</h1>
 		<h2>silent</h2>
+		<p><i>51840 frames</i></p>
 	</header>
 	<div id="content">
 	<figure>
@@ -163,6 +165,7 @@
 <article id="radio">
 	<header>
 		<h1>jukebox / radio :::</h1>
+		<h2>woven recorded found sound fragments</h2>
 	</header>
 	<p><i>play random sequence</i></p>
 	<p>
@@ -177,6 +180,23 @@
 		Your browser does not support the audio tag.
 	</audio>
 	</p>
+	<p>tonal entropy</p>
+</article>
+<article id="adding">
+	<header>
+		<h1>learning to add</h1>
+		<h2>a better learning machine</h2>
+	</header>
+	<div class="content">
+		<h5>
+		<span id="aa">1</span> +
+		<span id="bb">1</span> =
+		<span id="cc">2</span>
+		</h5>
+		<p>re: 
+		<a href="https://www.nytimes.com/interactive/2024/08/26/upshot/ai-synthetic-data.html">the ai math problem</a>
+		</p>
+	</div>
 </article>
 <!--
 	<article id="about">
@@ -220,6 +240,17 @@
 </div>
 </body>
 <script>
+	let aa = document.querySelector("#aa");
+	let bb = document.querySelector("#bb");
+	let cc = document.querySelector("#cc");
+	const add = () => {
+		let a = Math.floor(Math.random() * 100);
+		let b = Math.floor(Math.random() * 100);
+		aa.textContent = a;
+		bb.textContent = b;
+		cc.textContent = a + b; 
+	}
+	let addTimer = setInterval(add, 2000);
 	soundfiles = [
 		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118133359", mp3file: "line_all_thread_all_echo_reverb.mp3"},
 		{gsfolder:"noisefactory", subdir: "noisefactory", id: "20240118113500", mp3file: "line_all_thread_all_echo_reverb.mp3"},
