@@ -280,12 +280,11 @@ main {
 	border: 0px;
 }
 main.narrow {
-	width: 80%; 
-	max-width: 80%;
+	width: 85%; 
 	max-width: 600px;
 }
 main.medium {
- 	width: 80%; max-width: 750px;
+ 	width: 85%; max-width: 750px;
 }
 main.wide {
 	width: 90%; max-width: 900px;
@@ -480,7 +479,10 @@ ul[data-role="narrator"] > li {
 	font-family: 'Lucida Console', 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
 	font-family: var(--monospace);
 }
-
+ul {
+	padding-inline-start: 0.2em;
+	margin-block-start: 0.4em;
+}
 main.expand ul > li {
 	display: block;
 	line-height: 2em;
